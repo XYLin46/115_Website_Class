@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>30% 與 70% 雙欄版面</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: Arial, "Microsoft JhengHei", sans-serif;
+      margin: 32px;
+      color: #17324d;
+    }
+
+    .layout {
+      width: 90%;
+      display: flex;
+      border: 3px solid #17324d;
+    }
+
+    .sidebar {
+      width: 30%;
+      padding: 28px;
+      background: #dceef5;
+    }
+
+    .content {
+      width: 70%;
+      padding: 28px;
+      background: #f8ded5;
+    }
+  </style>
+</head>
+<body>
+  <h1>雙欄版面</h1>
+  <p>width 決定比例，display: flex 讓兩個 div 排在同一列。</p>
+
+  <div class="layout">
+    <div class="sidebar">
+      <h2>30%</h2>
+      <p>活動資訊與導覽</p>
+    </div>
+
+    <div class="content">
+      <h2>70%</h2>
+      <p>主要內容與報名說明</p>
+    </div>
+  </div>
+</body>
+</html>

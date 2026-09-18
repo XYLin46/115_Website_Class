@@ -1,0 +1,11 @@
+.codex-finalizer/
+.deck-build/
+.doc-build/
+/output/
+/examples/
+assets/bbs-terminal.png
+assets/frameset-chaos.png
+assets/web-evolution-cover.png
+*.tmp
+Thumbs.db
+.DS_Store

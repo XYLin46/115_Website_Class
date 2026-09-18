@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>前端入門工作坊</title>
+</head>
+<body>
+  <header>
+    <h1>前端入門工作坊</h1>
+    <nav aria-label="主要導覽">
+      <a href="#about">活動介紹</a>
+      <a href="#register">活動報名</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>活動介紹</h2>
+      <p>這是一場為初學者設計的前端工作坊。</p>
+      <p>活動日期：<time datetime="2026-10-15T09:00">2026 年 10 月 15 日上午 9 點</time></p>
+    </section>
+
+    <section id="register">
+      <h2>活動報名</h2>
+
+      <form action="#" method="post">
+        <p>
+          <label for="name">姓名</label><br>
+          <input type="text" id="name" name="name" autocomplete="name" required>
+        </p>
+
+        <p>
+          <label for="email">電子郵件</label><br>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </p>
+
+        <p>
+          <label for="phone">聯絡電話</label><br>
+          <input type="tel" id="phone" name="phone" autocomplete="tel">
+        </p>
+
+        <p>
+          <label for="level">目前程度</label><br>
+          <select id="level" name="level" required>
+            <option value="">請選擇</option>
+            <option value="beginner">完全沒有經驗</option>
+            <option value="basic">了解一些 HTML</option>
+            <option value="experienced">曾經製作過網頁</option>
+          </select>
+        </p>
+
+        <fieldset>
+          <legend>參加方式</legend>
+          <label><input type="radio" name="attendance" value="onsite" required> 實體參加</label>
+          <label><input type="radio" name="attendance" value="online"> 線上參加</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>感興趣的主題</legend>
+          <label><input type="checkbox" name="topics" value="html"> HTML</label>
+          <label><input type="checkbox" name="topics" value="css"> CSS</label>
+          <label><input type="checkbox" name="topics" value="javascript"> JavaScript</label>
+        </fieldset>
+
+        <p>
+          <label for="message">想對講師說的話</label><br>
+          <textarea id="message" name="message" rows="5" maxlength="200"></textarea>
+        </p>
+
+        <p>
+          <label><input type="checkbox" name="agreement" required> 我同意活動注意事項</label>
+        </p>
+
+        <button type="submit">送出報名</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 前端入門工作坊</p>
+  </footer>
+</body>
+</html>

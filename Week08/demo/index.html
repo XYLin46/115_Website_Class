@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>JavaScript 報名試算</title><link rel="stylesheet" href="style.css"></head>
+<body><main><section class="intro"><p class="eyebrow">JAVASCRIPT LAB</p><h1>活動費用試算器</h1><p>輸入人數、選擇票種，按下按鈕後由 JavaScript 計算並更新畫面。</p></section>
+  <section class="calculator"><label>票種<select id="ticket"><option value="650">一般票 $650</option><option value="520">學生票 $520</option></select></label><label>人數<input id="quantity" type="number" min="1" max="10" value="1"></label><button id="calculate">計算費用</button><div id="result" aria-live="polite">總金額：$650</div></section>
+  <section class="steps"><article><b>1</b><span>取得輸入值</span></article><article><b>2</b><span>執行函式</span></article><article><b>3</b><span>更新 DOM</span></article></section>
+</main><script src="script.js"></script></body></html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>前端入門工作坊</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>前端入門工作坊</h1>
+    <nav>
+      <a href="#about">活動介紹</a>
+      <a href="#register">活動報名</a>
+    </nav>
+  </header>
+
+  <main class="page-layout">
+    <div class="content-column">
+      <section id="about">
+        <h2>活動介紹</h2>
+        <p>從 HTML 結構開始，完成自己的第一個活動網頁。</p>
+      </section>
+
+      <section>
+        <h2>課程內容</h2>
+        <ul>
+          <li>HTML5 基礎結構</li>
+          <li>常用與語意化標籤</li>
+          <li>CSS 選擇器與版面比例</li>
+        </ul>
+      </section>
+    </div>
+
+    <aside class="form-column" id="register">
+      <h2>活動報名</h2>
+      <form action="#">
+        <label for="name">姓名</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">電子郵件</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="level">目前程度</label>
+        <select id="level" name="level">
+          <option>完全沒有經驗</option>
+          <option>了解一些 HTML</option>
+        </select>
+
+        <button type="submit">送出報名</button>
+      </form>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 前端入門工作坊</p>
+  </footer>
+</body>
+</html>
