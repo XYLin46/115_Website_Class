@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GitHub 帳號申請、第一個 repository 與 GitHub Pages 教學">
+  <title>GitHub 入門</title>
+  <link rel="stylesheet" href="../assets/css/course.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../">115 Website Class</a>
+    <nav class="site-nav" aria-label="週次導覽">
+      <a aria-current="page" href="../GitHubStart/">GitHub 入門</a>
+      <a href="../Week03/">W03</a><a href="../Week04/">W04</a><a href="../Week05/">W05</a>
+      <a href="../Week06/">W06</a><a href="../Week07/">W07</a><a href="../Week08/">W08</a><a href="../Week09/">期中考</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">BEFORE WEEK 03</p>
+        <h1>建立 GitHub 帳號與第一個專案</h1>
+        <p>不使用指令，直接從 GitHub 網頁完成帳號、repository、第一個 HTML 檔案與公開網站。</p>
+        <div class="hero-actions"><a class="button" href="#account">開始設定</a><a class="button secondary" href="https://github.com/signup">前往 GitHub 註冊</a></div>
+      </div>
+    </section>
+
+    <section class="section" id="account">
+      <div class="container lesson-layout">
+        <article class="lesson-main">
+          <h2 class="section-title">一 建立 GitHub 帳號</h2>
+          <ol class="checklist">
+            <li>前往 <a href="https://github.com/signup">github.com/signup</a>。</li>
+            <li>輸入可正常收信的 Email。</li>
+            <li>設定密碼與 GitHub 使用者名稱。</li>
+            <li>依畫面完成驗證，並到信箱確認 Email。</li>
+            <li>登入後記下自己的使用者名稱，未來網址會使用它。</li>
+          </ol>
+          <p class="notice"><strong>帳號安全：</strong>密碼、Email 驗證碼與兩階段驗證碼只能由本人輸入，不要提供給老師、同學或 AI 工具。</p>
+        </article>
+        <aside class="lesson-side">
+          <div class="panel"><h2>準備資料</h2><ul><li>可收信的 Email</li><li>未被使用的帳號名稱</li><li>自己記得住的安全密碼</li></ul></div>
+          <div class="panel"><h3>完成標準</h3><p>能登入 GitHub，右上角可以看到自己的頭像與帳號選單。</p></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">二 建立第一個 repository</h2>
+        <p class="section-lead">Repository 可以理解成一個存放專案檔案、版本紀錄與說明文件的線上資料夾。</p>
+        <div class="card-grid">
+          <div class="card"><span class="week-number">STEP 1</span><h3>開啟新增頁面</h3><p>登入後按右上角加號，選擇 New repository；也可以直接前往 github.com/new。</p></div>
+          <div class="card"><span class="week-number">STEP 2</span><h3>填寫專案資料</h3><p>Repository name 輸入 <code>my-first-website</code>，Description 可填寫「我的第一個網頁」。</p></div>
+          <div class="card"><span class="week-number">STEP 3</span><h3>選擇公開範圍</h3><p>選擇 Public，開啟 Add a README file，最後按 Create repository。</p></div>
+        </div>
+        <p class="notice success" style="margin-top:24px">Repository 名稱建議只使用英文字母、數字、連字號與底線，不要使用空格或中文。</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container lesson-layout">
+        <article class="lesson-main">
+          <h2 class="section-title">三 建立第一個網頁檔案</h2>
+          <ol class="checklist">
+            <li>進入剛建立的 repository。</li>
+            <li>選擇 Add file，再選擇 Create new file。</li>
+            <li>檔名輸入 <code>index.html</code>。</li>
+            <li>貼上以下 HTML，將姓名改成自己的名字。</li>
+            <li>按 Commit changes，確認後再次提交。</li>
+          </ol>
+          <pre><code>&lt;!doctype html&gt;
+&lt;html lang="zh-Hant"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;title&gt;我的第一個網站&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;你好，我是王小明&lt;/h1&gt;
+  &lt;p&gt;這是我的第一個 GitHub 專案。&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </article>
+        <aside class="lesson-side">
+          <div class="panel"><h2>什麼是 commit</h2><p>Commit 是一次有說明文字的版本紀錄。每次修改後提交，就能保留變更歷史。</p></div>
+          <div class="panel"><h3>檔名注意</h3><p>入口檔案必須命名為小寫的 <code>index.html</code>，不要寫成 index.htm.txt。</p></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container lesson-layout">
+        <article class="lesson-main">
+          <h2 class="section-title">四 使用 GitHub Pages 發布</h2>
+          <ol class="checklist">
+            <li>進入 repository 的 Settings。</li>
+            <li>在左側選單找到 Pages。</li>
+            <li>Source 選擇 Deploy from a branch。</li>
+            <li>Branch 選擇 <code>main</code>，資料夾選擇 <code>/ (root)</code>。</li>
+            <li>按 Save，等待 GitHub 建置網站。</li>
+          </ol>
+          <p>完成後，網址通常是：</p>
+          <pre><code>https://你的帳號.github.io/my-first-website/</code></pre>
+          <p class="notice">第一次發布或更新後可能需要等待幾分鐘。回到 Settings → Pages，可以查看網站網址與部署狀態。</p>
+        </article>
+        <aside class="lesson-side">
+          <div class="panel"><h2>完成檢查</h2><ul><li>Repository 為 Public</li><li>根目錄有 index.html</li><li>分支為 main</li><li>發布資料夾為 root</li><li>網址可正常開啟</li></ul></div>
+          <div class="panel"><h3>網址規則</h3><p>英文字母大小寫與資料夾名稱必須完全一致。</p></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">課堂練習</h2>
+        <div class="card-grid">
+          <div class="card"><h3>練習一</h3><p>完成 GitHub 帳號註冊與 Email 驗證。</p></div>
+          <div class="card"><h3>練習二</h3><p>建立公開的 my-first-website repository 與 README。</p></div>
+          <div class="card"><h3>練習三</h3><p>建立 index.html，發布 GitHub Pages，繳交公開網址。</p></div>
+        </div>
+        <h2 style="margin-top:40px">官方參考資料</h2>
+        <div class="resource-list">
+          <a class="resource-link" href="https://docs.github.com/en/get-started/start-your-journey/creating-a-repository-for-your-project-on-github"><span>GitHub 專案與 Repository 入門</span><strong>GitHub Docs →</strong></a>
+          <a class="resource-link" href="https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository"><span>建立新的 Repository</span><strong>GitHub Docs →</strong></a>
+          <a class="resource-link" href="https://docs.github.com/en/pages/quickstart"><span>GitHub Pages 快速入門</span><strong>GitHub Docs →</strong></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">GitHub 入門 · 帳號、Repository 與 Pages</footer>
+</body>
+</html>

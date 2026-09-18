@@ -6,6 +6,7 @@
 
 ## 課程內容
 
+- GitHub 入門 帳號、Repository 與 GitHub Pages
 - Week03 HTML5 基礎結構與表單
 - Week04 CSS 基礎與百分比版面
 - Week05 CSS3 盒模型與定位
