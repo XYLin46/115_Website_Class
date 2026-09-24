@@ -6,6 +6,7 @@
   <meta name="description" content="GitHub 帳號申請、第一個 repository 與 GitHub Pages 教學">
   <title>GitHub 入門</title>
   <link rel="stylesheet" href="../assets/css/course.css">
+  <style>body{-webkit-user-select:none;user-select:none}</style>
 </head>
 <body>
   <header class="site-header">
@@ -128,7 +129,23 @@
         </div>
       </div>
     </section>
+
   </main>
   <footer class="site-footer">GitHub 入門 · 帳號、Repository 與 Pages</footer>
+  <script>
+    (() => {
+      ["contextmenu", "copy", "cut", "dragstart"].forEach((eventName) => {
+        document.addEventListener(eventName, (event) => {
+          event.preventDefault();
+        });
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if ((event.ctrlKey || event.metaKey) && ["c", "x"].includes(event.key.toLowerCase())) {
+          event.preventDefault();
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
