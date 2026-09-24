@@ -13,6 +13,5 @@
 - Week06 Flexbox 現代網頁排版
 - Week07 RWD 響應式設計與 CSS 動畫
 - Week08 JavaScript 基礎語法
-- Week09 期中上機考
 
 啟用 GitHub Pages 後，請從預設分支的根目錄發布。
